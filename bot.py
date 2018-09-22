@@ -38,10 +38,12 @@ async def kill(ctx, user: discord.Member=None):
         if user is None:
             await bot.say(ctx.message.author.mention + ": I can't kill anyone unless you tell me who to kill!")
             return
-        if user.id == "489775956731363328":
+        if user.id == "490915177940647936":
             await bot.say(ctx.message.author.mention + ": I won't let you kill me! :knife:")
         elif user.id == ownerID:
             await bot.say(ctx.message.author.mention + ": Why do you want to kill my developer?")
+        if user.id == "274298631517896704":
+            await bot.say("I dont wanna kill him! Hes the reason I exist!)
         elif user.id == ctx.message.author.id:
             await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
         else:
