@@ -47,4 +47,4 @@ async def kill(ctx, user: discord.Member=None):
         else:
             await bot.say("I have killed {}".format(user.name))
 
-bot.login(os.environ.get(Token))
+bot.run(os.environ.get('Token'))
