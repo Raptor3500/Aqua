@@ -5,7 +5,7 @@ import asyncio
 import os
 
 bot = commands.Bot(command_prefix='aqua ')
-ownerID = "274298631517896704"
+ownerID = "329337654850093056"
 
 # To remove the help command and make your own help command
 #bot.remove_command('help')
