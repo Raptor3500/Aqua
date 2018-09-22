@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import os
 
-bot = commands.Bot(command_prefix='claire ')
+bot = commands.Bot(command_prefix='aqua ')
 ownerID = "329337654850093056"
 
 # To remove the help command and make your own help command
