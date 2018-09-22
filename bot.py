@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import os
 
-bot = commands.Bot(command_prefix='aqua ')
+bot = commands.Bot(command_prefix='claire ')
 ownerID = "329337654850093056"
 
 # To remove the help command and make your own help command
@@ -51,7 +51,7 @@ async def kill(ctx, user: discord.Member=None):
 
 @bot.command(pass_context=True)
 async def waifu(ctx):
-  await bot.say("I am Testing and Xenzai's waifu")
+  await bot.say("I am Xenzai's waifu")
 
 
 bot.run(os.environ.get('Token'))
