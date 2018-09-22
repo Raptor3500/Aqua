@@ -49,4 +49,9 @@ async def kill(ctx, user: discord.Member=None):
         else:
             await bot.say("I have killed {}".format(user.name))
 
+@bot.command(pass_context=True)
+async def waifu(ctx):
+  await bot.say("I am Testing and Xenzai's waifu")
+
+
 bot.run(os.environ.get('Token'))
