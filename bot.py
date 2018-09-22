@@ -23,7 +23,7 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def say(ctx, *args):
     """Make me say your message"""
-    if ctx.message.author.id in ownerID and ownerID2:
+    if ctx.message.author.id in ownerID and "274298631517896704":
         channel = ctx.message.channel
         mesg = ' '.join(args)
         await bot.delete_message(ctx.message)
