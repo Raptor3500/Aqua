@@ -6,6 +6,7 @@ import os
 
 bot = commands.Bot(command_prefix='aqua ')
 ownerID = "329337654850093056"
+ownerID2 = "274298631517896704"
 
 # To remove the help command and make your own help command
 #bot.remove_command('help')
@@ -22,7 +23,7 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def say(ctx, *args):
     """Make me say your message"""
-    if ctx.message.author.id in ownerID:
+    if ctx.message.author.id in ownerID and ownerID2:
         channel = ctx.message.channel
         mesg = ' '.join(args)
         await bot.delete_message(ctx.message)
