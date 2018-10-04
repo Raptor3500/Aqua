@@ -48,10 +48,6 @@ async def kill(ctx, user: discord.Member=None):
             await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
         else:
             await bot.say("I have killed {}".format(user.name))
-
-@bot.command(pass_context=True)
-async def waifu(ctx):
-  await bot.say("I am Xenzai's waifu")
   
 @bot.command(pass_context=True)
 async def playing(ctx, *args):
